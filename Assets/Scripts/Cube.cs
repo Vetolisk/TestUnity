@@ -10,7 +10,6 @@ public class Cube : MonoBehaviour
 
     private void Start()
     {
-        // для направления
         movement = new Vector3(0, 0, 1);
     }
 
@@ -23,7 +22,7 @@ public class Cube : MonoBehaviour
     {
         
             MovementLogic();
-            // поиск дистанции 
+          
             if (transform.position.z >= Distance)
             {
                 Destroy(gameObject);
